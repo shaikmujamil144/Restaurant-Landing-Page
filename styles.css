@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
 
-/* Base Styles */
 :root {
-    --primary-color: #2A3F54;      /* Dark Blue (updated) */
-    --secondary-color: #16A085;    /* Teal Green (updated) */
-    --accent-color: #2980B9;       /* Muted Blue (updated) */
+    --primary-color: #1A4B6D;
+    --secondary-color: #3A9BBD;
+    --accent-color: #FF9E4F;
     --text-dark: #2C3E50;
-    --text-light: #ECF0F1;
-    --bg-light: #F8F9FA;
-    --bg-dark: #34495E;
+    --text-light: #F5F9FA;
+    --bg-light: #F0F7F9;
+    --bg-dark: #1A4B6D;
 }
 
 * {
@@ -43,7 +42,6 @@ ul {
     padding: 0 25px;
 }
 
-/* Header & Navigation */
 header {
     background-color: white;
     padding: 1.2rem 0;
@@ -103,7 +101,6 @@ header {
     transition: all 0.3s ease;
 }
 
-/* Buttons */
 .cta-button {
     display: inline-block;
     background-color: var(--secondary-color);
@@ -116,20 +113,19 @@ header {
     margin-top: 25px;
     border: none;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(22, 160, 133, 0.4);
+    box-shadow: 0 4px 8px rgba(58, 155, 189, 0.4);
 }
 
 .cta-button:hover {
     background-color: var(--accent-color);
-    box-shadow: 0 6px 14px rgba(41, 128, 185, 0.6);
+    box-shadow: 0 6px 14px rgba(255, 158, 79, 0.6);
     transform: translateY(-3px);
 }
 
-/* Hero Section */
 .main-banner {
     height: 90vh;
-    background: linear-gradient(to bottom, rgba(42, 63, 84, 0.6), rgba(42, 63, 84, 0.6)),
-        url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4') no-repeat center center/cover;
+    background: linear-gradient(to bottom, rgba(26, 75, 109, 0.7), rgba(26, 75, 109, 0.7)),
+        url('https://images.unsplash.com/photo-1515825838458-f2a94b20105a') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,7 +156,6 @@ header {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Section Titles */
 .section-heading {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -181,7 +176,6 @@ header {
     border-radius: 3px;
 }
 
-/* Featured Dishes Section */
 .featured-dishes {
     padding: 90px 20px;
     background-color: var(--bg-light);
@@ -197,14 +191,14 @@ header {
     background-color: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 8px 30px rgba(22, 160, 133, 0.12);
+    box-shadow: 0 8px 30px rgba(58, 155, 189, 0.12);
     transition: all 0.35s ease;
     padding-bottom: 25px;
 }
 
 .dish-card:hover {
     transform: translateY(-12px);
-    box-shadow: 0 12px 40px rgba(41, 128, 185, 0.2);
+    box-shadow: 0 12px 40px rgba(255, 158, 79, 0.2);
 }
 
 .dish-image {
@@ -239,7 +233,6 @@ header {
     line-height: 1.6;
 }
 
-/* About Section */
 .about-wrapper {
     display: flex;
     align-items: center;
@@ -258,7 +251,7 @@ header {
     max-height: 520px;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 8px 30px rgba(22, 160, 133, 0.2);
+    box-shadow: 0 8px 30px rgba(58, 155, 189, 0.2);
 }
 
 .our-journey {
@@ -279,10 +272,10 @@ header {
     margin-bottom: 20px;
 }
 
-/* Menu Section */
 .menu-section {
     padding: 110px 0;
-    background-color: var(--bg-light);
+    background: linear-gradient(rgba(240, 247, 249, 0.9), rgba(240, 247, 249, 0.9)), 
+                url('https://images.unsplash.com/photo-1498837167922-ddd27525d352') center/cover;
 }
 
 .menu-categories {
@@ -295,7 +288,8 @@ header {
     background-color: white;
     padding: 35px;
     border-radius: 14px;
-    box-shadow: 0 6px 20px rgba(22, 160, 133, 0.15);
+    box-shadow: 0 6px 20px rgba(58, 155, 189, 0.15);
+    border-top: 5px solid var(--secondary-color);
 }
 
 .category h3 {
@@ -304,7 +298,7 @@ header {
     font-size: 1.7rem;
     margin-bottom: 25px;
     padding-bottom: 12px;
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: 2px solid #eee;
 }
 
 .item {
@@ -327,6 +321,7 @@ header {
 
 .item h4 span {
     color: var(--secondary-color);
+    font-weight: 700;
 }
 
 .item p {
@@ -335,7 +330,6 @@ header {
     line-height: 1.6;
 }
 
-/* Gallery Section */
 .photo-gallery {
     padding: 85px 0;
     background: white;
@@ -350,8 +344,7 @@ header {
 .gallery-photo {
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(22, 160, 133, 0.15);
-    aspect-ratio: 1/1;
+    box-shadow: 0 5px 20px rgba(58, 155, 189, 0.15);
 }
 
 .gallery-photo img {
@@ -365,7 +358,6 @@ header {
     transform: scale(1.1);
 }
 
-/* Reservation Section */
 .booking-section {
     padding: 110px 0;
     background-color: var(--bg-light);
@@ -411,7 +403,6 @@ header {
     grid-column: 1 / -1;
 }
 
-/* Location Section */
 .find-us {
     padding: 110px 0;
     background-color: white;
@@ -428,7 +419,7 @@ header {
     padding: 35px;
     background-color: var(--bg-light);
     border-radius: 14px;
-    box-shadow: 0 6px 20px rgba(22, 160, 133, 0.12);
+    box-shadow: 0 6px 20px rgba(58, 155, 189, 0.12);
 }
 
 .address-info h3 {
@@ -451,10 +442,9 @@ header {
     height: 420px;
     border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(22, 160, 133, 0.2);
+    box-shadow: 0 8px 25px rgba(58, 155, 189, 0.2);
 }
 
-/* Blog Section */
 .blog-posts {
     padding: 110px 0;
     background-color: var(--bg-light);
@@ -470,13 +460,13 @@ header {
     background-color: white;
     border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 8px 30px rgba(22, 160, 133, 0.12);
+    box-shadow: 0 8px 30px rgba(58, 155, 189, 0.12);
     transition: all 0.3s ease;
 }
 
 .post-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(41, 128, 185, 0.2);
+    box-shadow: 0 12px 40px rgba(255, 158, 79, 0.2);
 }
 
 .post-image {
@@ -535,7 +525,6 @@ header {
     transform: translateX(6px);
 }
 
-/* Footer */
 footer {
     background-color: var(--primary-color);
     color: var(--text-light);
@@ -586,7 +575,6 @@ footer {
     font-size: 1rem;
 }
 
-/* Newsletter Form */
 .subscribe-form {
     display: flex;
     flex-direction: column;
